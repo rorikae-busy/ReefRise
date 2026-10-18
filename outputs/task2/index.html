@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#f4f3e9">
+    <meta name="description" content="Simple everyday ways to help protect coral reefs and the life they support.">
+    <title>Keep Reefs Alive | Everyday ways to help</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Fraunces:opsz,wght@9..144,500;9..144,600&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --ink: #193a35;
+            --muted: #55706a;
+            --paper: #f4f3e9;
+            --sea: #d9e9df;
+            --coral: #e77b61;
+            --line: #d5ddd2;
+            --serif: "Fraunces", Georgia, serif;
+            --sans: "DM Sans", sans-serif;
+        }
+
+        * { box-sizing: border-box; }
+        html { scroll-behavior: smooth; }
+        body { margin: 0; color: var(--ink); background: var(--paper); font-family: var(--sans); }
+        a { color: inherit; }
+        .wrap { width: min(1120px, calc(100% - 48px)); margin: 0 auto; }
+
+        header { min-height: 74px; display: flex; align-items: center; justify-content: space-between; border-bottom: 1px solid var(--line); }
+        .brand { display: flex; gap: 10px; align-items: center; color: var(--ink); font-size: 13px; font-weight: 700; text-decoration: none; }
+        .brand svg { width: 26px; height: 26px; color: var(--coral); }
+        nav { display: flex; align-items: center; gap: 28px; font-size: 12px; }
+        nav a { text-decoration: none; }
+        nav a:hover, .resource:hover { color: #a44f3e; }
+        .nav-cta { padding: 11px 14px; border-radius: 3px; background: var(--ink); color: white; font-weight: 600; }
+
+        .hero { display: grid; grid-template-columns: 0.9fr 1.1fr; gap: 58px; align-items: center; padding: 62px 0 68px; }
+        .eyebrow { display: flex; align-items: center; gap: 9px; margin: 0 0 17px; color: #a44f3e; font-size: 10px; font-weight: 700; letter-spacing: 1.2px; text-transform: uppercase; }
+        .eyebrow::before { width: 22px; height: 1px; background: var(--coral); content: ""; }
+        h1, h2, p { margin-top: 0; }
+        h1 { max-width: 470px; margin-bottom: 20px; font: 500 clamp(48px, 6vw, 74px)/0.99 var(--serif); }
+        h1 em { color: #c45e49; }
+        .intro { max-width: 420px; margin-bottom: 25px; color: var(--muted); font-size: 15px; line-height: 1.7; }
+        .button { display: inline-flex; align-items: center; gap: 12px; padding: 13px 17px; border-radius: 3px; background: var(--coral); color: var(--ink); font-size: 12px; font-weight: 700; text-decoration: none; transition: transform 160ms ease; }
+        .button:hover { transform: translateY(-2px); }
+        .button svg { width: 16px; height: 16px; }
+        .hero-visual { position: relative; }
+        .hero-visual img { display: block; width: 100%; height: 420px; object-fit: cover; }
+        .photo-caption { position: absolute; right: -12px; bottom: 18px; width: 168px; padding: 14px 16px; background: var(--paper); font: 17px/1.25 var(--serif); }
+        .photo-caption span { display: block; margin-bottom: 5px; color: #a44f3e; font: 700 9px var(--sans); letter-spacing: 1px; text-transform: uppercase; }
+
+        .facts { display: grid; grid-template-columns: repeat(3, 1fr); padding: 23px 0; border-top: 1px solid var(--line); border-bottom: 1px solid var(--line); }
+        .fact { padding: 0 24px; border-right: 1px solid var(--line); }
+        .fact:first-child { padding-left: 0; }
+        .fact:last-child { border: 0; }
+        .fact strong { display: block; margin-bottom: 4px; font: 500 26px var(--serif); }
+        .fact span { color: var(--muted); font-size: 11px; line-height: 1.5; }
+
+        .actions { padding: 72px 0 78px; }
+        .section-head { display: flex; align-items: end; justify-content: space-between; gap: 24px; margin-bottom: 28px; }
+        .section-head h2, .closing h2 { max-width: 470px; margin: 0; font: 500 43px/1.06 var(--serif); }
+        .section-head > p { max-width: 310px; margin-bottom: 2px; color: var(--muted); font-size: 12px; line-height: 1.65; }
+        .action-list { border-top: 1px solid var(--line); }
+        .action { display: grid; grid-template-columns: 46px 1fr minmax(190px, 290px) 22px; gap: 18px; align-items: center; padding: 20px 0; border-bottom: 1px solid var(--line); }
+        .number { color: #bf624e; font: 20px var(--serif); }
+        .action h3 { margin: 0; font-size: 14px; }
+        .action p { margin: 0; color: var(--muted); font-size: 11px; line-height: 1.6; }
+        .action a { color: #a44f3e; font-size: 18px; text-decoration: none; }
+
+        .closing-band { background: var(--sea); }
+        .closing { display: grid; grid-template-columns: 1fr 1fr; gap: 56px; align-items: center; padding: 48px 0; }
+        .closing img { width: 100%; height: 270px; object-fit: cover; }
+        .closing h2 { margin-bottom: 14px; font-size: 37px; }
+        .closing p:not(.eyebrow) { max-width: 420px; margin-bottom: 18px; color: var(--muted); font-size: 12px; line-height: 1.7; }
+        .resource { color: #a44f3e; font-size: 11px; font-weight: 700; text-underline-offset: 4px; }
+        footer { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 22px 0; }
+        footer p, footer > a:last-child { margin: 0; color: var(--muted); font-size: 10px; }
+        footer > a:last-child { color: var(--ink); text-decoration: none; }
+
+        @media (max-width: 720px) {
+            .wrap { width: min(100% - 36px, 540px); }
+            header { min-height: 66px; }
+            nav { gap: 12px; }
+            nav a:not(.nav-cta) { display: none; }
+            nav .nav-cta { padding: 10px; }
+            .hero { grid-template-columns: 1fr; gap: 30px; padding: 44px 0 45px; }
+            h1 { font-size: clamp(50px, 12vw, 68px); }
+            .hero-visual img { height: 330px; }
+            .photo-caption { right: -4px; }
+            .facts { gap: 10px; }
+            .fact { padding: 0 10px; }
+            .fact strong { font-size: 22px; }
+            .fact span { font-size: 10px; }
+            .actions { padding: 58px 0; }
+            .section-head { align-items: start; flex-direction: column; gap: 12px; }
+            .section-head h2 { font-size: 38px; }
+            .action { grid-template-columns: 30px 1fr 20px; gap: 10px; padding: 17px 0; }
+            .action p { grid-column: 2; grid-row: 2; }
+            .action a { grid-column: 3; grid-row: 1; }
+            .closing { grid-template-columns: 1fr; gap: 24px; padding: 32px 0; }
+            .closing img { height: 230px; }
+            .closing h2 { font-size: 34px; }
+        }
+        @media (max-width: 390px) {
+            .facts { grid-template-columns: 1fr; gap: 12px; }
+            .fact, .fact:first-child { padding: 0; border: 0; }
+            .fact strong { margin-bottom: 0; }
+            .hero-visual img { height: 270px; }
+            footer { align-items: start; flex-direction: column; }
+        }
+        @media (prefers-reduced-motion: reduce) {
+            *, *::before, *::after { scroll-behavior: auto !important; transition-duration: 0.01ms !important; }
+        }
+    </style>
+</head>
+<body>
+    <header class="wrap" id="top">
+        <a class="brand" href="#top" aria-label="Keep Reefs Alive home">
+            <svg viewBox="0 0 32 32" fill="none" aria-hidden="true"><path d="M16 27V16m0 4-6-5m6 2 6-7m-6 15-7-2m7-4 6 1M10 15l-1-5m13 0 4-2m-4 2 2 5M4 28h24" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            KEEP REEFS ALIVE
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#why-reefs">Why reefs</a>
+            <a href="#actions">Take action</a>
+            <a class="nav-cta" href="https://coral.org/" target="_blank" rel="noopener noreferrer">Support reef work ↗</a>
+        </nav>
+    </header>
+
+    <main>
+        <section class="wrap hero" aria-labelledby="hero-title">
+            <div>
+                <p class="eyebrow">Small choices, living oceans</p>
+                <h1 id="hero-title">Keep the color in our <em>blue.</em></h1>
+                <p class="intro">Coral reefs shelter a quarter of all marine life. Whether you're at home or by the sea, your choices can help these remarkable places thrive.</p>
+                <a class="button" href="#actions">Find your first step <svg viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M3.5 10h12m-5-5 5 5-5 5" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            </div>
+            <div class="hero-visual">
+                <img src="https://images.unsplash.com/photo-1546026423-cc4642628d2b?auto=format&fit=crop&w=1400&q=85" alt="Colorful coral reef beneath clear blue water" fetchpriority="high">
+                <div class="photo-caption"><span>One living reef</span>A whole world beneath the waves.</div>
+            </div>
+        </section>
+
+        <section class="wrap facts" id="why-reefs" aria-label="Why coral reefs matter">
+            <div class="fact"><strong>25%</strong><span>of marine species depend on reefs at some point in their lives.</span></div>
+            <div class="fact"><strong>1 billion</strong><span>people benefit from reefs for food, livelihoods, and coastal protection.</span></div>
+            <div class="fact"><strong>One ocean</strong><span>Small, thoughtful choices add up to healthier marine habitats.</span></div>
+        </section>
+
+        <section class="wrap actions" id="actions" aria-labelledby="actions-title">
+            <div class="section-head">
+                <div><p class="eyebrow">Small acts, real impact</p><h2 id="actions-title">Make room for reefs to thrive.</h2></div>
+                <p>You don't have to live near the water to help. Pick one change that fits your everyday life.</p>
+            </div>
+            <div class="action-list">
+                <article class="action"><span class="number">01</span><h3>Choose sun protection thoughtfully</h3><p>Wear sun-protective clothing and check local advice on sunscreen ingredients.</p><a href="https://oceanservice.noaa.gov/news/sunscreen-corals.html" target="_blank" rel="noopener noreferrer" aria-label="NOAA guidance on sunscreen and corals">↗</a></article>
+                <article class="action"><span class="number">02</span><h3>Keep plastic out of the water</h3><p>Carry a reusable bottle or bag, and join a community cleanup when you can.</p><a href="https://oceanservice.noaa.gov/ocean/help-our-ocean.html" target="_blank" rel="noopener noreferrer" aria-label="NOAA ways to help the ocean">↗</a></article>
+                <article class="action"><span class="number">03</span><h3>Give coral room to grow</h3><p>When snorkeling or diving, never touch or stand on coral; choose reef-aware guides.</p><a href="https://oceanservice.noaa.gov/facts/coral-safe.html" target="_blank" rel="noopener noreferrer" aria-label="NOAA tips for being coral safe">↗</a></article>
+                <article class="action"><span class="number">04</span><h3>Support local conservation</h3><p>Back trusted groups and policies that protect ocean habitats and coastal communities.</p><a href="https://coral.org/" target="_blank" rel="noopener noreferrer" aria-label="Visit the Coral Reef Alliance">↗</a></article>
+            </div>
+        </section>
+
+        <div class="closing-band">
+            <section class="wrap closing" aria-labelledby="closing-title">
+                <img src="https://images.unsplash.com/photo-1518467166778-b88f373ffec7?auto=format&fit=crop&w=1000&q=85" alt="Sea turtle swimming over a coral reef" loading="lazy">
+                <div><p class="eyebrow">Hope is a practice</p><h2 id="closing-title">Healthy oceans need all of us.</h2><p>Reef recovery is possible when communities, scientists, and ocean advocates work together. Learn about the people helping reefs thrive.</p><a class="resource" href="https://coral.org/" target="_blank" rel="noopener noreferrer">Meet the Coral Reef Alliance ↗</a></div>
+            </section>
+        </div>
+    </main>
+
+    <footer class="wrap"><a class="brand" href="#top">KEEP REEFS ALIVE</a><p>For the blue, and everything that calls it home.</p><a href="#top">Back to top ↑</a></footer>
+</body>
+</html>

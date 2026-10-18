@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="theme-color" content="#103c3d">
+    <meta name="description" content="Learn about coral reefs, try a short knowledge quiz, and check off everyday ways to care for the sea.">
+    <title>ReefRise: Rise for Reefs, Protect Our Seas</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <a class="skip-link" href="#main-content">Skip to content</a>
+    <header class="site-header">
+        <a class="wordmark" href="#home" aria-label="ReefRise home">
+            <span class="wordmark-icon" aria-hidden="true">R</span>
+            <span>ReefRise</span>
+        </a>
+        <nav aria-label="Main navigation">
+            <a href="#learn">Learn</a>
+            <a href="#quiz">Quiz</a>
+            <a class="nav-action" href="#checklist">Take action <span aria-hidden="true">↓</span></a>
+        </nav>
+    </header>
+
+    <main id="main-content">
+        <section class="hero section-shell" id="home" aria-labelledby="hero-title">
+            <div class="hero-copy">
+                <p class="eyebrow"><span class="eyebrow-dot" aria-hidden="true"></span> A community guide to reef care</p>
+                <h1 id="hero-title">Rise for reefs.<br><span>Protect our seas.</span></h1>
+                <p class="hero-description">Healthy reefs shelter sea life and help coastal communities. Learn a little, share what you know, and make one caring choice at a time.</p>
+                <a class="primary-link" href="#learn">Explore the reef <span aria-hidden="true">↓</span></a>
+                <p class="hero-note">For coastal neighbors, students, and volunteers</p>
+            </div>
+            <div class="reef-scene" role="img" aria-label="Illustration of a coral reef with fish beneath the water">
+                <div class="scene-label"><span class="scene-dot"></span> Life below the surface</div>
+                <span class="scene-fish fish-one" aria-hidden="true"></span>
+                <span class="scene-fish fish-two" aria-hidden="true"></span>
+                <span class="scene-fish fish-three" aria-hidden="true"></span>
+                <span class="sea-grass grass-one" aria-hidden="true"></span>
+                <span class="sea-grass grass-two" aria-hidden="true"></span>
+                <span class="coral coral-left" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="coral coral-middle" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="coral coral-right" aria-hidden="true"><i></i><i></i><i></i></span>
+                <span class="scene-caption">A reef is a neighborhood<br>for ocean life.</span>
+            </div>
+        </section>
+
+        <section class="learn-section section-shell" id="learn" aria-labelledby="learn-title">
+            <div class="section-heading">
+                <div>
+                    <p class="eyebrow">01 / Get to know the reef</p>
+                    <h2 id="learn-title">Small ecosystem.<br><span>Big connections.</span></h2>
+                </div>
+                <p class="section-intro">Learning cards · Educational demonstration content, not a local reef report.</p>
+            </div>
+            <div class="learning-grid">
+                <article class="learning-card card-coral">
+                    <div class="card-topline"><span>01</span><span class="card-symbol" aria-hidden="true">✳</span></div>
+                    <p class="card-kicker">The reef itself</p>
+                    <h3>Coral is an animal</h3>
+                    <p>Corals are tiny animals called polyps. Many live together in colonies and build hard structures that can form a reef over a long time.</p>
+                    <p class="card-takeaway"><span aria-hidden="true">↳</span> Reefs are living habitats, not rocks.</p>
+                </article>
+                <article class="learning-card card-life">
+                    <div class="card-topline"><span>02</span><span class="card-symbol" aria-hidden="true">≈</span></div>
+                    <p class="card-kicker">Life in the blue</p>
+                    <h3>A busy underwater home</h3>
+                    <p>Fish, crabs, mollusks, sea turtles, and many other organisms use reef habitats for food, shelter, or places to grow.</p>
+                    <p class="card-takeaway"><span aria-hidden="true">↳</span> Many lives are connected here.</p>
+                </article>
+                <article class="learning-card card-threats">
+                    <div class="card-topline"><span>03</span><span class="card-symbol" aria-hidden="true">!</span></div>
+                    <p class="card-kicker">Pressures reefs face</p>
+                    <h3>Small changes matter</h3>
+                    <p>Warmer seas can stress corals. Pollution, damaging fishing practices, and careless contact can also harm reef life.</p>
+                    <p class="card-takeaway"><span aria-hidden="true">↳</span> Reducing harm helps give reefs a chance.</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="quiz-band" id="quiz" aria-labelledby="quiz-title">
+            <div class="section-shell quiz-layout">
+                <div class="quiz-intro">
+                    <p class="eyebrow">02 / Check what you know</p>
+                    <h2 id="quiz-title">Reef knowledge,<br><span>one question at a time.</span></h2>
+                    <p>This short educational quiz is just for practice. Choose one answer for each question, then see your score and explanations.</p>
+                    <div class="quiz-stamp" aria-hidden="true"><span>5</span><span>questions<br>for practice</span></div>
+                </div>
+                <form class="quiz-form" id="quiz-form">
+                    <fieldset class="quiz-question" data-answer="b">
+                        <legend><span class="question-number">01</span> What are reef-building corals?</legend>
+                        <label class="quiz-option"><input type="radio" name="q1" value="a"><span>Underwater plants</span></label>
+                        <label class="quiz-option"><input type="radio" name="q1" value="b"><span>Small animals that live in colonies</span></label>
+                        <label class="quiz-option"><input type="radio" name="q1" value="c"><span>Colorful rocks</span></label>
+                    </fieldset>
+                    <fieldset class="quiz-question" data-answer="a">
+                        <legend><span class="question-number">02</span> Why are reefs important to marine life?</legend>
+                        <label class="quiz-option"><input type="radio" name="q2" value="a"><span>They provide habitat and shelter</span></label>
+                        <label class="quiz-option"><input type="radio" name="q2" value="b"><span>They keep all ocean water warm</span></label>
+                        <label class="quiz-option"><input type="radio" name="q2" value="c"><span>They stop fish from moving</span></label>
+                    </fieldset>
+                    <fieldset class="quiz-question" data-answer="c">
+                        <legend><span class="question-number">03</span> What can cause coral bleaching?</legend>
+                        <label class="quiz-option"><input type="radio" name="q3" value="a"><span>A passing cloud</span></label>
+                        <label class="quiz-option"><input type="radio" name="q3" value="b"><span>Fish swimming nearby</span></label>
+                        <label class="quiz-option"><input type="radio" name="q3" value="c"><span>Stress, including unusually warm water</span></label>
+                    </fieldset>
+                    <fieldset class="quiz-question" data-answer="b">
+                        <legend><span class="question-number">04</span> What is a reef-friendly choice in the water?</legend>
+                        <label class="quiz-option"><input type="radio" name="q4" value="a"><span>Standing on coral to rest</span></label>
+                        <label class="quiz-option"><input type="radio" name="q4" value="b"><span>Watching marine life without touching it</span></label>
+                        <label class="quiz-option"><input type="radio" name="q4" value="c"><span>Dropping an anchor on the reef</span></label>
+                    </fieldset>
+                    <fieldset class="quiz-question" data-answer="a">
+                        <legend><span class="question-number">05</span> Which action can help reduce harm to reefs?</legend>
+                        <label class="quiz-option"><input type="radio" name="q5" value="a"><span>Joining a community cleanup and preventing litter</span></label>
+                        <label class="quiz-option"><input type="radio" name="q5" value="b"><span>Leaving waste near a drain or shoreline</span></label>
+                        <label class="quiz-option"><input type="radio" name="q5" value="c"><span>Collecting pieces of coral as souvenirs</span></label>
+                    </fieldset>
+                    <div class="quiz-controls">
+                        <button class="button button-dark" type="submit">Check my answers <span aria-hidden="true">→</span></button>
+                        <button class="button button-quiet" type="reset">Start over</button>
+                    </div>
+                    <div class="quiz-result" id="quiz-result" role="status" aria-live="polite" aria-atomic="true" hidden></div>
+                </form>
+            </div>
+        </section>
+
+        <section class="checklist-section section-shell" id="checklist" aria-labelledby="checklist-title">
+            <div class="checklist-heading">
+                <div>
+                    <p class="eyebrow">03 / Turn care into action</p>
+                    <h2 id="checklist-title">Your reef-care<br><span>checklist.</span></h2>
+                    <p class="checklist-intro">Choose actions that make sense for you and your community. Every item here is a learning prompt, not a report of local conditions.</p>
+                </div>
+                <div class="progress-panel">
+                    <span class="progress-label">Your progress</span>
+                    <progress id="checklist-progress" max="5" value="0" aria-label="Reef protection checklist progress">0 of 5 actions complete</progress>
+                    <output id="checklist-count" for="checklist-progress" aria-live="polite">0 of 5 actions complete</output>
+                </div>
+            </div>
+            <ul class="checklist">
+                <li>
+                    <label class="check-item"><input type="checkbox" name="reef-action"><span class="check-box" aria-hidden="true"></span><span class="check-copy"><strong>Bring reusables</strong><span>Carry a refillable bottle or reusable bag to help avoid single-use litter.</span></span><span class="check-mark" aria-hidden="true">01</span></label>
+                </li>
+                <li>
+                    <label class="check-item"><input type="checkbox" name="reef-action"><span class="check-box" aria-hidden="true"></span><span class="check-copy"><strong>Leave coral undisturbed</strong><span>When swimming or snorkeling, look without touching, standing on, or taking coral.</span></span><span class="check-mark" aria-hidden="true">02</span></label>
+                </li>
+                <li>
+                    <label class="check-item"><input type="checkbox" name="reef-action"><span class="check-box" aria-hidden="true"></span><span class="check-copy"><strong>Keep waste out of waterways</strong><span>Sort and dispose of waste responsibly; keep drains and shorelines free of litter.</span></span><span class="check-mark" aria-hidden="true">03</span></label>
+                </li>
+                <li>
+                    <label class="check-item"><input type="checkbox" name="reef-action"><span class="check-box" aria-hidden="true"></span><span class="check-copy"><strong>Join a local coastal cleanup</strong><span>Take part in a community activity when one is available and safe to join.</span></span><span class="check-mark" aria-hidden="true">04</span></label>
+                </li>
+                <li>
+                    <label class="check-item"><input type="checkbox" name="reef-action"><span class="check-box" aria-hidden="true"></span><span class="check-copy"><strong>Share what you learned</strong><span>Talk with classmates, family, or neighbors about caring for marine life.</span></span><span class="check-mark" aria-hidden="true">05</span></label>
+                </li>
+            </ul>
+            <p class="checklist-note"><span aria-hidden="true">✳</span> Choose one small action today. Come back to the list whenever you like.</p>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="section-shell footer-inner">
+            <a class="wordmark" href="#home"><span class="wordmark-icon" aria-hidden="true">R</span><span>ReefRise</span></a>
+            <p>Rise for reefs, protect our seas.</p>
+            <a href="#home">Back to top ↑</a>
+        </div>
+    </footer>
+</body>
+</html>
